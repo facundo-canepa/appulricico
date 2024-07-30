@@ -1,0 +1,19 @@
+{% extends "appcoder/base.html" %}
+
+{% block titulo %}Ulrico Shmidel │ Cursos{% endblock %}
+
+{% block contenidoQueCambia %}
+
+{% include 'appcoder/publicidad.html' %}
+
+<h1>Nuestros Cursos</h1>
+
+{%for curso in cursos%}
+
+{{curso.nombre}} - {{curso.comision}}
+
+{% endfor %}
+
+{% endblock %}
+
+
